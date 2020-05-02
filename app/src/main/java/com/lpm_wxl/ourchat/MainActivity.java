@@ -15,4 +15,9 @@ public class MainActivity extends AppCompatActivity {
         Log.i("103020", "onCreate: ");
         Toast.makeText(this, "4564654", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 }
