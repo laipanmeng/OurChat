@@ -1,14 +1,14 @@
-package com.lpm_wxl.chat;
+package com.lpm_wxl.contacts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class chat_MainActivity extends AppCompatActivity {
+public class Contacts_ContactsMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chat_activity__main);
+        setContentView(R.layout.contacts_activity__main);
     }
 }

@@ -1,6 +1,6 @@
-package com.lpm_wxl.commond.utils;
+package com.lpm_wxl.common.utils;
 
-import com.lpm_wxl.commond.base.BaseApplication;
+import com.lpm_wxl.common.base.BaseApplication;
 
 public class ContextUtils {
 

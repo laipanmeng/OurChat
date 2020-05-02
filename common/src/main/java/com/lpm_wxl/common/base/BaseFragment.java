@@ -1,4 +1,4 @@
-package com.lpm_wxl.commond.base;
+package com.lpm_wxl.common.base;
 
 import androidx.fragment.app.Fragment;
 

@@ -56,12 +56,16 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    dataBinding {
+        enabled = true
+    }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
 
 //
 //    implementation rootProject.ext.dependencies["appcompat"]

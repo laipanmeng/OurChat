@@ -1,9 +1,9 @@
-package com.lpm_wxl.commond.base;
+package com.lpm_wxl.common.base;
 
 import android.app.Application;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.lpm_wxl.commond.BuildConfig;
+import com.lpm_wxl.common.BuildConfig;
 
 public class BaseApplication extends Application {
 

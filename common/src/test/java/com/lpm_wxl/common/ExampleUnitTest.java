@@ -1,4 +1,4 @@
-package com.lpm_wxl.commond;
+package com.lpm_wxl.common;
 
 import org.junit.Test;
 
