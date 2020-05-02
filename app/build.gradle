@@ -36,6 +36,10 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    dataBinding {
+        enabled = true
+    }
+
 }
 
 dependencies {
@@ -58,8 +62,8 @@ dependencies {
 
     }else
     {
-        implementation project(':common')
-        implementation project(":common_core")
+        api project(':common')
+        api project(":common_core")
 
     }
     annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
