@@ -14,10 +14,15 @@ import androidx.annotation.Nullable;
 
 @Route(path = "/my/My_MyFragment")
 public class My_MyFragment extends BaseFragment {
-    @Nullable
+
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View inflate = inflater.inflate(R.layout.my_fragment_chat, null);
-        return inflate;
+    public int initContentView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return R.layout.my_fragment_chat;
+    }
+
+    @Override
+    public int initVariableId() {
+        return 0;
     }
 }

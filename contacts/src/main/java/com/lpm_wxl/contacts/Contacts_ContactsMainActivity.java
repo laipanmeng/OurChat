@@ -4,11 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Contacts_ContactsMainActivity extends AppCompatActivity {
+import com.lpm_wxl.common.base.BaseActivity;
+
+public class Contacts_ContactsMainActivity extends BaseActivity {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.contacts_activity__main);
+    public int initContentView(Bundle savedInstanceState) {
+        return R.layout.contacts_activity__main;
+    }
+
+    @Override
+    public int initVariableId() {
+        return 0;
     }
 }

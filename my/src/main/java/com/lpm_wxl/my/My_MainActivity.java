@@ -4,11 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class My_MainActivity extends AppCompatActivity {
+import com.lpm_wxl.common.base.BaseActivity;
+import com.lpm_wxl.common.base.BaseViewModel;
+
+public class My_MainActivity extends BaseActivity {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.my_activity__main);
+    public int initContentView(Bundle savedInstanceState) {
+        return R.layout.my_activity__main;
+    }
+
+    @Override
+    public int initVariableId() {
+        return 0;
     }
 }

@@ -14,10 +14,15 @@ import androidx.annotation.Nullable;
 
 @Route(path = "/contacts/Contacts_ContactsFragment")
 public class Contacts_ContactsFragment extends BaseFragment {
-    @Nullable
+
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View inflate = inflater.inflate(R.layout.contacts_fragment_chat, null);
-        return inflate;
+    public int initContentView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return R.layout.contacts_fragment_chat;
+    }
+
+    @Override
+    public int initVariableId() {
+        return 0;
     }
 }

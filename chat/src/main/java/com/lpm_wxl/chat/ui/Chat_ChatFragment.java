@@ -19,10 +19,14 @@ import androidx.annotation.Nullable;
 @Route(path = "/chat/Chat_Chat_Fragment")
 public class Chat_ChatFragment extends BaseFragment {
 
-    @Nullable
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View inflate = inflater.inflate(R.layout.chat_fragment_chat, null);
-        return inflate;
+    public int initContentView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return R.layout.chat_fragment_chat;
+    }
+
+    @Override
+    public int initVariableId() {
+        return 0;
     }
 }
