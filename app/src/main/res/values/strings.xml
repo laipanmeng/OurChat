@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Ourchat</string>
+
+    <string name="app_chat">chat</string>
+
+    <string name="app_contacts">contacts</string>
+
+
+    <string name="app_my">my</string>
 </resources>

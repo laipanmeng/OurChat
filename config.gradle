@@ -25,13 +25,29 @@ ext
                     ]
 
 
-            supportLibrary = [retrofitSdkVersion   : "2.0.0",
+//            android = [compileSdkVersion       : 26,
+//                       buildToolsVersion       : "26.0.2",
+//                       minSdkVersion           : 19,
+//                       targetSdkVersion        : 26,
+//                       versionCode             : 100000,
+//                       versionName             : "1.0.0",
+//                       androidSupportSdkVersion: "26.0.2",
+//                       retrofitSdkVersion      : "2.0.0",
+//                       dagger2SdkVersion       : "2.6",
+//                       rxlifecycleSdkVersion   : "0.6.1",
+//                       espressoSdkVersion      : "2.2.2"
+//            ]
+
+            supportLibrary = [
+                    androidSupportSdkVersion   : "26.0.2",
+                    retrofitSdkVersion   : "2.0.0",
                               dagger2SdkVersion    : "2.6",
                               rxlifecycleSdkVersion: "0.6.1",
+                              androidSupportSdkVersion:"",
                               espressoSdkVersion   : "2.2.2"]
 
             dependencies = [
-
+                    "design"  : "com.android.support:design:${supportLibrary["androidSupportSdkVersion"]}",
                     "play-services-base": 'com.google.android.gms:play-services-base:11.4.0',
                     "firebase-messaging": 'com.google.firebase:firebase-messaging:11.4.0',
                     "hyphenate-sdk": 'com.hyphenate:hyphenate-sdk:3.6.1',
