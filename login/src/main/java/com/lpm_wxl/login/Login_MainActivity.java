@@ -19,6 +19,8 @@ public class Login_MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity__main);
         Log.i("103020", "onCreate: ");
+        Log.i("456456", "onCreate: ");
+
     }
 
     @Override
