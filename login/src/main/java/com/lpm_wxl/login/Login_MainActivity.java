@@ -12,13 +12,19 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Login_MainActivity extends AppCompatActivity {
+import com.lpm_wxl.common.base.BaseActivity;
+
+public class Login_MainActivity extends BaseActivity {
+
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_activity__main);
-        Log.e("1111", "onCreate: ");
+    public int initContentView(Bundle savedInstanceState) {
+        return R.layout.login_activity__main;
+    }
 
+    @Override
+    public int initVariableId() {
+        return 0;
     }
 }

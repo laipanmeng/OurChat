@@ -45,10 +45,10 @@ public class App_MainActivity extends AppCompatActivity {
             }
         });
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.FramePage, chatFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.FramePage, contactsFragment).commit();
 
 
-    }
+     }
 
 
     private void navigationItemSelected(int itemId) {
