@@ -8,13 +8,14 @@ public class RouterUtils {
 
     public static class AppModuleRouter
     {
-
+        public static final String APP_SPLASHACTIVITY="/app/App_SplashActivity";
+        public static final String APP_MAINACTIVITY="/app/App_MainActivity";
     }
 
     public static class LoginModuleRouter
     {
 
-        public static final String LOGINMAINACTIVITY="/login/Login_MainActivity";
+        public static final String LOGINMAINACTIVITY="/login/Login_LoginActivity";
 
     }
     public static class ChatModuleRouter

@@ -5,6 +5,7 @@ import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.OnLifecycleEvent;
 
+
 public interface IBaseViewModel extends LifecycleObserver {
     @OnLifecycleEvent(Lifecycle.Event.ON_ANY)
     void onAny(LifecycleOwner owner, Lifecycle.Event event);
@@ -27,3 +28,6 @@ public interface IBaseViewModel extends LifecycleObserver {
     @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
     void onPause();
 }
+
+
+

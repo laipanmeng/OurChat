@@ -9,4 +9,14 @@
     <color name="colorAccent">
         #03DAC5
     </color>
+
+
+
+        <color name="login_textColor">#202020</color>
+        <color name="login_textColorHint">#A0A0A0</color>
+        <color name="login_textColorVice">#6C6C6C</color>
+        <color name="login_viewLineColor">#F0F0F0</color>
+    <color name="login_white">#FFF</color>
+
+
 </resources>
