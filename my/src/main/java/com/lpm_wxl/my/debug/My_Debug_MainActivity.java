@@ -3,7 +3,9 @@ package com.lpm_wxl.my.debug;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
+import com.lpm_wxl.my.My_MyFragment;
 import com.lpm_wxl.my.R;
 
 public class My_Debug_MainActivity extends AppCompatActivity {
@@ -12,5 +14,8 @@ public class My_Debug_MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_debug_activity_main);
+        Log.i("Linsane", "onCreate: 我的界面");
+        My_MyFragment fragment = new My_MyFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.my_debug_fl, fragment).commit();
     }
 }

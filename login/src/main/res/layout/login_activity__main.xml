@@ -3,7 +3,6 @@
    >
 
     <data>
-
         <variable name="loginViewModel"
             type="com.lpm_wxl.login.viewmodel.Login_LoginViewModel"/>
 
@@ -14,8 +13,9 @@
         android:background="@color/login_white">
 
         <ImageView
+            android:id="@+id/bottom_background_iv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_alignParentBottom="true"
             android:background="@mipmap/login_back"
             android:scaleType="fitXY" />
@@ -23,13 +23,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_background_iv"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="20dp">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:src="@mipmap/login_logo" />
 
             <LinearLayout
