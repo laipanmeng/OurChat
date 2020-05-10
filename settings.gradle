@@ -6,4 +6,4 @@ include ':my'
 include ':contacts'
 include ':common'
 include ':common_core'
-include ':common_opensource'
+

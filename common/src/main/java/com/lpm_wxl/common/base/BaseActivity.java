@@ -70,10 +70,6 @@ public abstract class BaseActivity <V extends ViewDataBinding, VM extends BaseVi
 
 
 
-    @Override
-    public void initViewObservable() {
-
-    }
     /**
      * 创建ViewModel
      *
@@ -83,6 +79,10 @@ public abstract class BaseActivity <V extends ViewDataBinding, VM extends BaseVi
      */
     public <T extends ViewModel> T createViewModel(FragmentActivity activity, Class<T> cls) {
         return ViewModelProviders.of(activity).get(cls);
+    }
+    @Override
+    public void initViewObservable() {
+
     }
     @Override
     protected void onDestroy() {

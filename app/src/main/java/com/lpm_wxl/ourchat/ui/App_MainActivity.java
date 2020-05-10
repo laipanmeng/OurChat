@@ -1,4 +1,4 @@
-package com.lpm_wxl.ourchat;
+package com.lpm_wxl.ourchat.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,13 +11,15 @@ import android.view.MenuItem;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.lpm_wxl.common.router.RouterUtils;
+import com.lpm_wxl.ourchat.R;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Route(path = "/app/App_MainActivity")
 public class App_MainActivity extends AppCompatActivity {
 
     FrameLayout FramePage;
