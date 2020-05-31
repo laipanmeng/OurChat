@@ -49,10 +49,11 @@
             android:value="360" />
         <meta-data
             android:name="design_height_in_dp"
-            android:value="640" /> <!-- 设置环信应用的AppKey -->
+            android:value="640" />
+        <!-- 设置环信应用的AppKey -->
         <meta-data
             android:name="EASEMOB_APPKEY"
-            android:value="1100200422181575#ourchat" /> <!-- 声明SDK所需的service SDK核心功能 -->
+            android:value="1102200422113998#linsaneim" /> <!-- 声明SDK所需的service SDK核心功能 -->
         <service
             android:name="com.hyphenate.chat.EMChatService"
             android:exported="true" />

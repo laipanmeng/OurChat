@@ -2,19 +2,18 @@ package com.lpm_wxl.my;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.lpm_wxl.common.base.BaseFragment;
+import com.lpm_wxl.my.databinding.MyFragmentChatBinding;
+import com.lpm_wxl.my.viewmodel.MyFragmentViewModel;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 
 @Route(path = "/my/My_MyFragment")
-public class My_MyFragment extends BaseFragment {
-
+public class My_MyFragment extends BaseFragment<MyFragmentChatBinding, MyFragmentViewModel> {
 
     @Override
     public int initContentView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -23,6 +22,6 @@ public class My_MyFragment extends BaseFragment {
 
     @Override
     public int initVariableId() {
-        return 0;
+        return BR.myviewmodel;
     }
 }

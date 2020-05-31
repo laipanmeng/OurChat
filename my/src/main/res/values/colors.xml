@@ -9,4 +9,7 @@
     <color name="colorAccent">
         #03DAC5
     </color>
+    
+    <color name="lightgray">#E2E3E3</color>
+    <color name="white">#F0FCFCFF</color>
 </resources>
