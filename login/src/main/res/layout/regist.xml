@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="registViewModel"
+            type="com.lpm_wxl.login.viewmodel.RegistViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/enter_username_et"
+            android:hint="请输入用户名"
+            android:gravity="center"
+            android:text="@={registViewModel.account}"
+            app:layout_constraintBottom_toTopOf="@+id/enter_password_et"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="18dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/enter_password_et"
+            android:hint="请输入密码"
+            android:gravity="center"
+            android:text="@={registViewModel.password}"
+            android:padding="18dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/confirm_password_et"
+            android:hint="请确认密码"
+            android:padding="18dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@={registViewModel.confirmPassword}"
+            app:layout_constraintTop_toBottomOf="@+id/enter_password_et"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/regist_btn"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_password_et"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:text="注册"
+            android:onClick="@{() -> registViewModel.registAccount()}"
+            android:background="@color/colorAccent"
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

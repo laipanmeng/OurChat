@@ -21,21 +21,17 @@ public class MyFragmentViewModel extends BaseViewModel {
 
     //二维码 点击事件
     public void qrCodeOnClickListener(){
-        Toast.makeText(context, "点击二维码", Toast.LENGTH_SHORT);
     }
 
     //设置 点击事件
     public void settingOnClickListener(){
-        Toast.makeText(context, "点击设置", Toast.LENGTH_SHORT);
     }
 
     //帮助和客服 点击事件
     public void helpOnClickListener(){
-        Toast.makeText(context, "点击帮助与客服", Toast.LENGTH_SHORT);
     }
 
     //关于 点击事件
     public void aboutOnClickListener(){
-        Toast.makeText(context, "点击关于", Toast.LENGTH_SHORT);
     }
 }

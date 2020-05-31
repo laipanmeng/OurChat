@@ -14,7 +14,6 @@ public class My_Debug_MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_debug_activity_main);
-        Log.i("Linsane", "onCreate: 我的界面");
         My_MyFragment fragment = new My_MyFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.my_debug_fl, fragment).commit();
     }
